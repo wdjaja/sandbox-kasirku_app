@@ -1,6 +1,6 @@
 # kasirku_app
 
-Sandbox Flutter Assignment 5. 
+A new Flutter project.. 
 
 ## Getting Started
 
