@@ -42,9 +42,9 @@ class _RegisterPageState extends State<RegisterPage> {
               SizedBox(
                 height: 165,
                 child: Image.asset(
-                  'assets/images/reg1.png',
-                  height: 145,
-                  width: 145,
+                  'assets/images/reg2.png',
+                  height: 140,
+                  width: 140,
                   alignment: Alignment.center,
                 ),
               ),
@@ -144,7 +144,7 @@ class _RegisterPageState extends State<RegisterPage> {
                           Navigator.pop(context);
                         },
                       style: TextStyle(
-                        color: AppColor.primarymain,
+                        color: AppColor.primary,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

@@ -25,9 +25,9 @@ class ProfilePage extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadiusGeometry.circular(100),
                     child: Image.asset(
-                      'assets/images/ava1.png',
-                      height: 145,
-                      width: 145,
+                      'assets/images/ava2.png',
+                      height: 140,
+                      width: 140,
                       alignment: Alignment.center,
                     ),
                   ),
@@ -57,7 +57,7 @@ class ProfilePage extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColor.codered,
+                backgroundColor: AppColor.codeRed,
               ),
               child: Text('Keluar'),
             ),

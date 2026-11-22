@@ -51,9 +51,9 @@ class _LoginPageState extends State<LoginPage> {
                 ),
                 SizedBox(height: 12),
                 Image.asset(
-                  'assets/images/login1.png',
-                  height: 145,
-                  width: 145,
+                  'assets/images/log2.png',
+                  height: 140,
+                  width: 140,
                   alignment: Alignment.center,
                 ),
                 SizedBox(height: 1),

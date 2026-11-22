@@ -6,17 +6,18 @@ class AppThemes {
     return ThemeData(
       fontFamily: 'Poppins',
       primaryColor: AppColor.primary,
-      dividerColor: AppColor.darkground,
-      scaffoldBackgroundColor: AppColor.superwhite,
-      colorScheme: ColorScheme.light(secondary: AppColor.darkground),
+      dividerColor: AppColor.darkGround,
+      scaffoldBackgroundColor: AppColor.superWhite,
+      colorScheme: ColorScheme.light(secondary: AppColor.darkGround),
       appBarTheme: AppBarThemeData(
-        backgroundColor: AppColor.superwhite,
+        centerTitle: false,
+        backgroundColor: AppColor.superWhite,
         titleSpacing: 24,
-        foregroundColor: AppColor.primarymain,
-        surfaceTintColor: AppColor.superwhite,
+        foregroundColor: AppColor.primary,
+        surfaceTintColor: AppColor.superWhite,
       ),
       checkboxTheme: CheckboxThemeData(
-        side: BorderSide(color: AppColor.darkground),
+        side: BorderSide(color: AppColor.primaryShade),
         fillColor: WidgetStateProperty.fromMap({
           WidgetState.selected: AppColor.primary,
         }),
@@ -25,27 +26,27 @@ class AppThemes {
         ),
         materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
       ),
-      dividerTheme: DividerThemeData(color: AppColor.darkground, thickness: 1),
+      dividerTheme: DividerThemeData(color: AppColor.darkGround, thickness: 1),
       textTheme: textTheme,
       inputDecorationTheme: InputDecorationThemeData(
         filled: true,
-        fillColor: AppColor.superwhite,
+        fillColor: AppColor.superWhite,
         contentPadding: const EdgeInsets.symmetric(
           horizontal: 12,
           vertical: 16,
         ),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: AppColor.medground),
+          borderSide: BorderSide(color: AppColor.primaryShade),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: AppColor.medground),
+          borderSide: BorderSide(color: AppColor.primaryShade),
         ),
         disabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
           borderSide: BorderSide(
-            color: AppColor.medground.withValues(alpha: .7),
+            color: AppColor.primaryShade.withValues(alpha: .7),
           ),
         ),
         focusedBorder: OutlineInputBorder(
@@ -54,15 +55,15 @@ class AppThemes {
         ),
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: AppColor.codered),
+          borderSide: BorderSide(color: AppColor.codeRed),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14),
-          borderSide: BorderSide(color: AppColor.codered),
+          borderSide: BorderSide(color: AppColor.codeRed),
         ),
-        outlineBorder: BorderSide(color: AppColor.medground),
+        outlineBorder: BorderSide(color: AppColor.primaryShade),
         hintStyle: textTheme.bodyMedium,
-        errorStyle: textTheme.bodyMedium?.copyWith(color: AppColor.codered),
+        errorStyle: textTheme.bodyMedium?.copyWith(color: AppColor.codeRed),
         labelStyle: textTheme.bodyMedium,
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
@@ -70,17 +71,28 @@ class AppThemes {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
+          side: BorderSide(color: AppColor.primary),
           backgroundColor: AppColor.primary,
-          foregroundColor: AppColor.superwhite,
+          foregroundColor: AppColor.superWhite,
+          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
+          textStyle: textTheme.titleMedium,
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          foregroundColor: AppColor.primary,
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 14),
           textStyle: textTheme.titleMedium,
         ),
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData(
         elevation: 8,
-        backgroundColor: AppColor.superwhite,
+        backgroundColor: AppColor.superWhite,
         selectedItemColor: AppColor.primary,
-        unselectedItemColor: AppColor.darkground,
+        unselectedItemColor: AppColor.darkGround,
         type: BottomNavigationBarType.fixed,
       ),
     );
@@ -118,7 +130,7 @@ class AppThemes {
       headlineSmall: TextStyle(
         color: AppColor.text,
         fontWeight: FontWeight.w600,
-        fontSize: 26,
+        fontSize: 24,
         fontFamily: 'Poppins',
       ),
       titleLarge: TextStyle(

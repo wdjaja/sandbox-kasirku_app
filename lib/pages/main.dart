@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:kasirku_app/pages/cashier.dart';
+import 'package:kasirku_app/pages/catalog.dart';
 import 'package:kasirku_app/pages/history.dart';
 import 'package:kasirku_app/pages/home.dart';
 import 'package:kasirku_app/pages/profile.dart';
@@ -20,13 +20,13 @@ class _MainPageState extends State<MainPage> {
       case 0:
         return HomePage();
       case 1:
-        return CashierPage();
+        return CatalogPage();
       case 2:
         return HistoryPage();
       case 3:
         return ProfilePage();
       default:
-        return ProfilePage();
+        return HomePage();
     }
   }
 
