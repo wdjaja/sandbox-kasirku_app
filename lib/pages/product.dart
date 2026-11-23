@@ -72,7 +72,7 @@ class _ProductPageState extends State<ProductPage> {
 }
 
 class CardProduct extends StatelessWidget {
-  const CardProduct({super.key, required this.isProductPage});
+  const CardProduct({super.key, this.isProductPage = false});
 
   final bool isProductPage;
 
